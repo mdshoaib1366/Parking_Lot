@@ -1,0 +1,12 @@
+package com.DAO;
+
+import com.Bean.ProductBean;
+
+public class UpdateProductDAO 
+{
+	int k=0;
+	public int update(ProductBean pb)
+	{
+		return k
+	}
+}

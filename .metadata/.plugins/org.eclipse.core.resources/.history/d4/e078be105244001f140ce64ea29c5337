@@ -1,0 +1,25 @@
+package com.Parking;
+
+public class EntryGate 
+{
+	private ParkingLot parkingLot;
+	
+	public EntryGate(ParkingLot parkingLot) {
+		super();
+		this.parkingLot = parkingLot;
+	}
+ 
+	public void allowEntry(Vehicle v)
+	{
+		if(parkingLot.getCapacity() > parkingLot.getNextSlot())
+		{
+			System.out.println(v.getType()+" allowing...");
+			parkingLot.parkVehicle(v);
+		}
+		else 
+		{
+			System.out.println("!!Not Allow!!");
+			
+		}
+	}
+}

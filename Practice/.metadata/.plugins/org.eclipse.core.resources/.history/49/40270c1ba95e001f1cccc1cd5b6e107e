@@ -1,0 +1,13 @@
+package com.queue.test;
+
+import java.util.PriorityQueue;
+
+public class PriorityQueueDemo1 {
+
+	public static void main(String[] args) {
+		PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+		pq.add(12);
+
+	}
+
+}

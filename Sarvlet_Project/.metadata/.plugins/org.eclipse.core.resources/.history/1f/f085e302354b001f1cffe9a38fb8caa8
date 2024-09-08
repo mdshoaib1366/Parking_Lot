@@ -1,0 +1,24 @@
+package com.DAO;
+
+import java.sql.Connection;
+
+import com.Bean.ProductBean;
+import com.DBConnect.DBInfo;
+
+public class AddProductDAO 
+{
+	public int insert(ProductBean pb)
+	{
+		int k=0;
+		try
+		{
+			Connection con = DBInfo.getCon();
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return k;
+	}
+}

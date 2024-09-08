@@ -1,0 +1,11 @@
+package com.DAO;
+
+import com.Bean.ProductBean;
+
+public class AddProductDAO 
+{
+	public int insert(ProductBean pb)
+	{
+		
+	}
+}

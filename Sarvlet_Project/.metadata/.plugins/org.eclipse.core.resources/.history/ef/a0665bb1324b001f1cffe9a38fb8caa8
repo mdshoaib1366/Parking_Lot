@@ -1,0 +1,29 @@
+package com.Servlet;
+
+import java.io.*;
+
+import com.Bean.AdminBean;
+import com.DAO.AdminDAO;
+
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.*;
+import jakarta.servlet.http.*;
+@SuppressWarnings("serial")
+@WebServlet("/")
+public class ProductServlet  extends HttpServlet
+{
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException,IOException
+	{
+		HttpSession hs = req.getSession();
+		if(hs==null)
+		{
+			req.setAttribute("msg","Session expired....<br>");
+			RequestDispatcher rd = req.getRequestDispatcher("Msg.jsp");
+			rd.forward(req, res);
+		}
+		else	
+		{
+			 
+		}
+	}
+}

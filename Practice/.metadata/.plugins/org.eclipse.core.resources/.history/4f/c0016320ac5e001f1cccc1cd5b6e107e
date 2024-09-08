@@ -1,0 +1,14 @@
+package com.generic.test;
+
+
+abstract class Animal
+{
+	public abstract void checkup();
+}
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

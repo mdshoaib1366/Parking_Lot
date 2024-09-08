@@ -1,0 +1,18 @@
+package com.IdentityHashMap.test;
+
+import java.util.*;
+public class Demo1 
+{
+	public static void main(String[] args)
+	{
+		HashMap<String,Integer> hm = new HashMap<>();
+		IdentityHashMap<String, Integer> ihm = new IdentityHashMap<String, Integer>();
+		
+		
+		hm.put("Ravi", 11);
+		hm.put(new String("Ravi"), 11);
+		
+		System.out.println(hm);
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.trigular_matrix;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class File_in_out {
+	public String getString(FileInputStream f2)
+	{
+		return null;
+	}
+	public static void main(String[] args) {
+		var file = new FileInputStream("c:\\new\\file001.txt"); 
+		
+		System.out.println((FileInputStream)( file.getString(file)));
+	}
+}

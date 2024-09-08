@@ -1,0 +1,31 @@
+package com.may01;
+
+public class OrderedCake extends Cake {
+
+	private String message;
+
+	public OrderedCake()
+	{
+		super();
+		
+	}
+	
+	public OrderedCake(String shape, String flavour, int qty) {
+		super(shape, flavour, qty);
+		
+	}
+
+	public OrderedCake(String shape, String flavour, int qty, String message) {
+		super(shape, flavour, qty);
+		this.message = message;
+	}
+	
+	protected void showCake()
+	{
+		
+		System.out.println("A "+super.getShape()+" Cake Of "+ super.getFlavour()+" having thr qty" 
+				                      +super.getQty()+" of rs."+super.getPrice()*super.getQty()+" is ready");
+	
+	}
+	
+}

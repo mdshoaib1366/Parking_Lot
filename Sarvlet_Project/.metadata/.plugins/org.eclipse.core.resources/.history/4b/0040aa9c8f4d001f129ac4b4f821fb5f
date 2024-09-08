@@ -1,0 +1,16 @@
+package com.DAO;
+
+import java.sql.Connection;
+
+import com.Bean.ProductBean;
+import com.DBConnect.DBInfo;
+
+public class UpdateProductDAO 
+{
+	int k=0;
+	public int update(ProductBean pb)
+	{
+		Connection con = DBInfo.getCon();
+		return k;
+	}
+}

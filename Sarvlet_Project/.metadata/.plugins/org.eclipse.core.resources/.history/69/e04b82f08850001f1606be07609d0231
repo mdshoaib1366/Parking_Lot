@@ -1,0 +1,13 @@
+package com.demo;
+
+import java.io.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+
+public class DisplayServlet2 extends HttpServlet
+{
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throw 
+	{
+		
+	}
+}

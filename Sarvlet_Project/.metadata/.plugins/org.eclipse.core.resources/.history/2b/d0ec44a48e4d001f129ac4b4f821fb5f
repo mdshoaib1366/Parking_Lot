@@ -1,0 +1,34 @@
+package com.Servlet;
+
+import java.io.*;
+
+import java.util.*;
+import com.Bean.ProductBean;
+
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.*;
+import jakarta.servlet.http.*;
+
+@SuppressWarnings("serial")
+@WebServlet("/update")
+public class UpdateProductServlet extends HttpServlet
+{
+	protected void doPost(HttpServletResponse res, HttpServletRequest req) throws ServletException,IOException
+	{
+		HttpSession hs = req.getSession();
+		if(hs == null)
+		{
+			req.setAttribute("msg", "Session has expired....<br>");
+			req.getRequestDispatcher("Msg.jsp").forward(req, res);;
+		}
+		else
+		{
+			String pCode = req.getParameter("code");
+			float price = Float.parseFloat(req.getParameter("price"));
+			int pQty = Integer.parseInt(req.getParameter("qty"));	
+			ArrayList<ProductBean> al = (ArrayList<ProductBean>)hs.getAttribute("alist");
+			
+			al.Iterator();
+		}
+	}
+}

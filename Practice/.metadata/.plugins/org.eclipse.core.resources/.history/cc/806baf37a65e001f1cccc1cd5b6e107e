@@ -1,0 +1,26 @@
+package com.IdentityHashMap.test;
+
+import java.util.Collection;
+
+import java.util.TreeMap;
+
+public class TreeMapDemo1
+{
+	public static void main(String[] args) 
+	{
+		TreeMap<String, String> tm = new TreeMap<String, String>();
+		tm.put("one", "1");
+		tm.put("two", "2");
+		tm.put("three", null);
+		tm.put("four", "4");
+		
+		displayMap(tm);
+		
+		System.out.println(tm);
+	}
+	
+	static void displayMap(TreeMap map)
+	{
+		Collection c = map.entrySet();
+	}
+}

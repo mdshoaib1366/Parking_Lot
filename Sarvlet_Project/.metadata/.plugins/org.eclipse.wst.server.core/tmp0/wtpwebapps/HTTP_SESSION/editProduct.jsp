@@ -1,0 +1,25 @@
+<%@page import="com.Bean.ProductBean"%>
+<%@page import="com.Bean.AdminBean"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		AdminBean ab = (AdminBean)session.getAttribute("abean");
+		ProductBean pb = (ProductBean)request.getAttribute("pbean");
+		out.println("Page belongs to Admin: "+ab.getFname()+"<br>");
+	%>
+	<form action="update" method="post">
+		<input type="hidden" name="code" value="<%= pb.getCode() %>">
+		
+		Product-Price: <input type="text" name="price" value="<%= pb.getPrice() %>"><br>
+		Product-Quantity: <input type="text" name="qty" value="<%= pb.getQunatity() %>"><br>
+		<input type="submit" value="update-Product">
+	</form>
+</body>
+</html>

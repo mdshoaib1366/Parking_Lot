@@ -1,0 +1,57 @@
+package com.Parking;
+
+import java.util.*;
+
+public class ParkingLot
+{
+	private int capacity;
+	private Map<String,Integer> parkedVehicles;
+	private int nextSlot;
+	
+	public ParkingLot() {
+		super();
+		
+	}
+	
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+
+	public Map<String, Integer> getParkedVehicles() {
+		return parkedVehicles;
+	}
+
+	public void setParkedVehicles(Map<String, Integer> parkedVehicles) {
+		this.parkedVehicles = parkedVehicles;
+	}
+
+	public int getNextSlot() {
+		return nextSlot;
+	}
+
+	public void setNextSlot(int nextSlot) {
+		this.nextSlot = nextSlot;
+	}
+
+	public void parkVehicle(Vehicle v)
+	{		
+		System.out.println(v.getType()+" parked in slot "+nextSlot+" | Vehicle plate Number: "+v.getPlateNumber());	
+		nextSlot++;
+	}
+	
+	public void exitVehicle(Vehicle v)
+	{
+		nextSlot--;
+		System.out.println(v.getType()+" exited in slot "+nextSlot+" | Vehicle plate Number: "+v.getPlateNumber());	
+	
+	}
+	
+	public void findVehicle(String s)
+	{
+		
+	}
+}

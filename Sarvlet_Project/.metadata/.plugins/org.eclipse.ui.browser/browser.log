@@ -1,0 +1,51 @@
+
+Jul 08, 2024 18:50:49.50 NEW SESSION
+Jul 08, 2024 18:50:49.52 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 08, 2024 18:51:21.16 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Jul 08, 2024 22:21:34.46 NEW SESSION
+Jul 08, 2024 22:21:34.47 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Jul 08, 2024 22:34:30.36 NEW SESSION
+Jul 08, 2024 22:34:30.37 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Jul 09, 2024 15:06:57.53 NEW SESSION
+Jul 09, 2024 15:06:57.54 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 09, 2024 15:08:25.57 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 09, 2024 15:15:15.53 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Jul 09, 2024 15:19:17.45 NEW SESSION
+Jul 09, 2024 15:19:17.46 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 09, 2024 15:31:24.63 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Jul 10, 2024 23:21:01.09 NEW SESSION
+Jul 10, 2024 23:21:01.10 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 10, 2024 23:23:18.14 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 10, 2024 23:23:50.68 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 10, 2024 23:28:08.65 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 10, 2024 23:34:21.52 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 10, 2024 23:41:43.74 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 10, 2024 23:46:58.47 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 10, 2024 23:51:26.53 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 10, 2024 23:55:54.42 [16712:11576:0710/235554.421:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+Jul 11, 2024 24:03:47.06 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Jul 30, 2024 10:07:16.82 NEW SESSION
+Jul 30, 2024 10:07:16.84 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 30, 2024 10:07:48.27 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+Jul 30, 2024 10:20:19.77 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 30, 2024 10:20:52.89 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+
+Jul 30, 2024 15:04:10.52 NEW SESSION
+Jul 30, 2024 15:04:10.52 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 30, 2024 15:04:13.54 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+
+Aug 01, 2024 10:39:47.79 NEW SESSION
+Aug 01, 2024 10:39:47.82 [20712:11892:0801/103947.790:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+Aug 01, 2024 10:39:48.47 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Aug 02, 2024 09:28:42.50 NEW SESSION
+Aug 02, 2024 09:28:42.51 Created TensorFlow Lite XNNPACK delegate for CPU.
+Aug 02, 2024 09:28:46.74 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+Aug 02, 2024 10:26:09.00 Created TensorFlow Lite XNNPACK delegate for CPU.
+Aug 02, 2024 10:26:37.34 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).

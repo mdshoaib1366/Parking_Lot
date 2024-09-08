@@ -1,0 +1,49 @@
+package com.may04;
+
+public class Car implements Vehicle{
+
+	private boolean isRented;
+	private double retalRate;
+	private int rentedDays;
+	
+	@Override
+	public boolean rent() {
+		
+		return false;
+	}
+
+	@Override
+	public boolean returnVehicle() {
+		
+		return false;
+	}
+
+	@Override
+	public double calculateRentalCost() {
+		double cost = retalRate*rentedDays;
+		return cost;
+	}
+
+	public Car() {
+		super();
+		  isRented = false;
+		  retalRate = 1000;
+		 rentedDays = 0;
+	}
+
+	public boolean isRented(boolean r) {
+		return rent();
+	}
+
+	public double getRetalRate() {
+		return retalRate;
+	}
+
+	public int getRentedDays() {
+		return rentedDays;
+	}
+
+	
+	
+	
+}

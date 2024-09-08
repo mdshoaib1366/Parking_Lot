@@ -1,0 +1,26 @@
+package com.Servlet;
+
+import java.io.*;
+
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.*;
+import jakarta.servlet.http.*;
+
+@SuppressWarnings("serial")
+@WebServlet("/update")
+public class UpdateProductServlet extends HttpServlet
+{
+	protected void doPost(HttpServletResponse res, HttpServletRequest req) throws ServletException,IOException
+	{
+		HttpSession hs = req.getSession();
+		if(hs == null)
+		{
+			req.setAttribute("msg", "Session has expired....<br>");
+			req.getRequestDispatcher("Msg.jsp").forward(req, res);;
+		}
+		else
+		{
+			hs.getAttribute("alist");
+		}
+	}
+}

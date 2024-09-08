@@ -1,0 +1,12 @@
+package com.Servlet;
+
+import java.io.*;
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.*;
+import jakarta.servlet.http.*;
+
+@WebServlet
+public class DeleteProductServlet
+{
+
+}

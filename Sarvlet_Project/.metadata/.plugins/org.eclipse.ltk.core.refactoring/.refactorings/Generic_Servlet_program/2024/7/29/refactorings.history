@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Generic_Servlet_program/src/main/webapp/input.html&apos; to &apos;Home.html&apos;" description="Rename resource &apos;input.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/input.html" name="Home.html" stamp="1721122154631" updateReferences="true"/>
+</session>

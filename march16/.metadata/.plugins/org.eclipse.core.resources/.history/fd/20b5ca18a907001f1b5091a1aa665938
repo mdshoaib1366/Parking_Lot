@@ -1,0 +1,18 @@
+package com.may01;
+
+public class OrderedCake extends Cake {
+
+	private String message;
+
+	protected OrderedCake()
+	{
+		this("Riund", "venilla", 400)
+	}
+	
+	public OrderedCake(String shape, String flavour, int qty) {
+		super(shape, flavour, qty);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

@@ -1,0 +1,27 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.Bean.CustomerBean;
+import com.DBConnect.DBInfo;
+
+public class CustomerDAO 
+{
+	public CustomerBean cb = null;
+	public CustomerBean login(String uN, String pW)
+	{
+		try
+		{
+			Connection con = DBInfo.getCon();
+			PreparedStatement ps = con.prepareStatement
+					("Select * from customer63 where uname=? and pword=?");
+			ps.setString(1, uN);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return cb;
+	}
+}

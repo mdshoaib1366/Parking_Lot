@@ -1,0 +1,24 @@
+package com.queue.test;
+
+import java.util.PriorityQueue;
+
+public class PriorityQueueDemo1 {
+
+	public static void main(String[] args) {
+		PriorityQueue<String> pq = new PriorityQueue<>();
+		   pq.add("9");     
+           pq.add("8");
+			pq.add("7");
+//			System.out.println(pq);
+			
+           System.out.println(pq.peek() + " ");  //    6  7  8   9
+//           pq.offer("6");      
+//			pq.offer("5");
+//           pq.add("3");
+
+           System.out.println(pq);
+		
+
+	}
+
+}

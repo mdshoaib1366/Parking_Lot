@@ -1,0 +1,25 @@
+package com.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.DBConnect.DBInfo;
+
+public class DeleteProductDAO 
+{
+	int k = 0;
+	public int delete()
+	{
+		try
+		{
+			Connection con = DBInfo.getCon();
+			PreparedStatement ps = con.prepareStatement("delete product63 where code=?")
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return k;
+	}
+}

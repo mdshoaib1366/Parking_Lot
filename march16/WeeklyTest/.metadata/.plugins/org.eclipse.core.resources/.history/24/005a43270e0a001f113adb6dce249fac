@@ -1,0 +1,12 @@
+package com.may04.task3;
+
+public class Tasting01 {
+	public static void main(String[] args) {
+		Student s1 = new Student(11, "Atul", "Science", "SML");
+		
+		ScienceCollege sc = new ScienceCollege(s1);
+		sc.getCollegeName();
+		sc.addStudent(s1);
+		sc.showcaseCollegeDetails();
+	}
+}

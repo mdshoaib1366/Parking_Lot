@@ -1,0 +1,59 @@
+package com.Parking;
+
+import java.util.WeakHashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Parking_Main {
+	public static void main(String[] args) {
+		Map<String, Integer> parkedVehicles = new WeakHashMap<String, Integer>();
+		Scanner sc = new Scanner(System.in);
+
+		while (true) {
+			
+			System.out.println("*******parking Lot********");
+			System.out.println("press 1 for enter parking");
+			System.out.println("press 2 for exitng parking");
+			System.out.println("press 3 for exit app");
+
+			System.out.println("Enter your choice: ");
+			
+			switch(Integer.parseInt(sc.nextLine())) {
+			case 1:
+				// vehicle class
+				Vehicle v1 = new Vehicle();
+				System.out.println("Enter vehicle Plate Number: ");
+				v1.setPlateNumber(sc.nextLine().toUpperCase());
+				System.out.println("Enter vehicle Type: ");
+				String type = sc.nextLine().toLowerCase();
+				if (type.equals("bike")) {
+					v1.setType(VehicleType.BIKE);
+				} else if (type.equals("car")) {
+					v1.setType(VehicleType.CAR);
+				} else {
+					v1.setType(VehicleType.TRUCK);
+				}
+
+				// parkingLot
+				ParkingLot parkingLot = new ParkingLot();
+				parkedVehicles.put(v1.getPlateNumber(), parkingLot.getCapacity());
+				parkingLot.setCapacity(40);
+				parkingLot.setParkedVehicles(parkedVehicles);
+				parkingLot.setNextSlot(1);
+				 new EntryGate(parkingLot).allowEntry(v1);
+				break;
+				
+			case 2:
+				break;
+				
+			case 3: 
+				System.out.println("System exit successfully");
+			
+			default: 
+				System.out.println("Invalid option...."); 
+			
+			}
+		}
+
+	}
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body
+{
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+fieldset {
+	background-color: #00ffff;
+	width: 900px;
+	height: 400px;
+	}
+	input[value="SUBMIT"] {
+		background-color: salmon;
+		width: 70px;
+		height: 50px;
+		margin-top: 20px; 
+		border-radius: 10px ;
+	}
+	
+</style>
+</head>
+<body style="margin-top:10%; font-size: 15px;">
+
+	<fieldset><legend> Employee Details</legend>
+	
+	<form action="fo" method="post" style="margin-top: 4%">
+	<div style="margin-left: 24%;">
+		<table style="align-items: center;">
+			<tr>
+				<td>Employee Id</td>
+				<td>:<input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td>Employee Name:</td>
+				<td>:<input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Employee Address</td>
+				<td>:<input type="text" name="addr"></td>
+			</tr>
+			<tr>
+				<td>Employee Salary</td>
+				<td>:<input type="text" name="salary"></td>
+			</tr>
+			<tr>
+				<td>Employee Gender</td>
+				<td>:Male<input type="radio" name="gender" value="Male"></td>
+				<td>Female<input type="radio" name="gender" value="Female"></td>
+			</tr>
+			<tr>
+				<td>Employee Profile</td>
+				<td>:Developer<input type="radio" name="profile" value="Developer"></td>
+				<td>Tester<input type="radio" name="profile" value="Tester"></td>
+				<td>QA<input type="radio" name="profile" value="QA"></td>
+			</tr>
+			<tr>
+				<td>Employee Hobbies</td>
+				<td>:Reading,<input type="checkbox" name="hobby" value="Reading"></td>
+				<td>Writing,<input type="checkbox" name="hobby" value="Writing"></td>
+				<td>Searching,<input type="checkbox" name="hobby" value="Searching"></td>
+				<td>Coding<input type="checkbox" name="hobby" value="Coding"></td>
+			</tr>
+			<tr>
+			<td>select Employee State:<select name="st">
+			<option value="">state</option>	
+			<option value="UP">UP</option>
+			<option value="AP">AP</option>
+			<option value="GOA">GOA</option>
+			<option value="MP">MP</option>
+			<option value="ASSAM">ASSAM</option>
+			<option value="MAHARASTRA">MAHARASTRA</option>
+			<option value="BIHAR">BIHAR</option>
+			<option value="KARNATKA">KARNATKA</option>
+			</select> </td>	
+			</tr>
+		</table>
+		<input style="margin-left:30%;" type="submit" value="SUBMIT">
+	</div>
+	</form>
+	</fieldset>
+</body>
+</html>

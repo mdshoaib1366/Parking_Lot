@@ -1,0 +1,7 @@
+package com.demo;
+
+import java.io.*;
+public class DisplayServlet2 
+{
+
+}

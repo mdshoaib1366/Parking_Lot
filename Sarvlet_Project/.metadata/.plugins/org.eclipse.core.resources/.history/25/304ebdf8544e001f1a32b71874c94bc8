@@ -1,0 +1,23 @@
+package com.DAO;
+
+import java.sql.Connection;
+
+import com.DBConnect.DBInfo;
+
+public class DeleteProductDAO 
+{
+	int k = 0;
+	public int delete()
+	{
+		Connection con = DBInfo.getCon();
+		try
+		{
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return k;
+	}
+}

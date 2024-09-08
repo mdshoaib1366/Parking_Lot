@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GenericServlet1&apos; to &apos;GenericServlet1_assinment&apos;" description="Rename resource &apos;GenericServlet1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/GenericServlet1" name="GenericServlet1_assinment" stamp="1721143933126" updateReferences="true"/>
+</session>

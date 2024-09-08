@@ -1,0 +1,10 @@
+package com.DAO;
+
+public class DeleteProductDAO 
+{
+	int k =0;
+	public int delete()
+	{
+		
+	}
+}

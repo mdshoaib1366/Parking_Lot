@@ -1,0 +1,13 @@
+package com.may04.task4;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Employee emp1 = null;
+		emp1 = new Developer(60000);
+		emp2 = new Manager(40000, 10000);
+		emp3 = new Tester(30000,1000, 1000)
+
+	}
+
+}

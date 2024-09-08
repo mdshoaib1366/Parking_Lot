@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="com.Bean.*,java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		ArrayList<ProductBean> al = (ArrayList<ProductBean>)session.getAttribute("alist");
+		CustomerBean cb = (CustomerBean)session.getAttribute("cbean");
+		out.println("Page belongs to customer: "+cb.getFname()+"<br>");
+		if(al.size()==0)
+		{
+			out.println("Product not available...<br>");
+		}
+		
+		
+		 
+		else
+		{
+			out.prinln("<h6>code</h6>"+"<h6>name</h6>"+"<h6>price</h6>"+"<h6>qty</h6>");
+			Iterator<ProductBean> it  = al.iterator();
+			while(it.hasNext())
+			{
+				ProductBean pb = (ProductBean)it.next();
+				out.println(pb.getCode()+"&nbsp;&nbsp;"
+				+pb.getName()+"&nbsp;&nbsp;"
+				+pb.getPrice()+"&nbsp;&nbsp;"
+				+pb.getQunatity()+"&nbsp;&nbsp;"
+				+"<br>");
+			}
+			
+		}
+	%>
+	<a href="logout">logout</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+package com.Servlet;
+
+import java.io.*;
+import java.util.*;
+
+import com.Bean.ProductBean;
+
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.*;
+import jakarta.servlet.http.*;
+@SuppressWarnings("serial")
+@WebServlet("/view")
+public class ViewProductServlet  extends HttpServlet
+{
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException,IOException
+	{
+		
+		ArrayList<ProductBean> al = new ArrayList<ProductBean>();
+		
+		
+	}
+}

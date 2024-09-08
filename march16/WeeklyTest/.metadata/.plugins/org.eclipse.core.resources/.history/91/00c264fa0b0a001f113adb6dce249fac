@@ -1,0 +1,8 @@
+package com.may04.task3;
+
+public class Student {
+	int id;
+	String name;
+	String course;
+	String collegeName;
+}

@@ -1,0 +1,8 @@
+1721985893250	Move 'Msg.jsp' to 'webapp'
+1721988450340	Move 'product.html' to 'webapp'
+1721988453460	Move 'AddProduct.jsp' to 'webapp'
+1722056874680	Rename resource 'CutomerView.jsp'
+1722071361464	Rename resource 'viewProduct.jsp'
+1722071632889	Rename type 'ViewProductServlet'
+1722073216589	Rename type 'CustomerViewProductServlet'
+1722073889529	Move 'logout.jsp' to 'webapp'

@@ -1,0 +1,11 @@
+package com.IdentityHashMap.test;
+
+import java.util.*;
+public class Demo1 
+{
+	public static void main(String[] args)
+	{
+		HashMap<"ravi", 23> hm = new HashMap<K, V>();
+	}
+
+}

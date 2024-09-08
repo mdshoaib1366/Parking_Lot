@@ -1,0 +1,12 @@
+package com.DAO;
+
+import com.Bean.CustomerBean;
+
+public class CustomerDAO 
+{
+	public CustomerBean cb = null;
+	public CustomerBean login(String uN, String pW)
+	{
+		return cb;
+	}
+}

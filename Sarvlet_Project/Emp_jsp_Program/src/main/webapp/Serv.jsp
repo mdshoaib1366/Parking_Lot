@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		String eId = request.getParameter("id");
+		String eName = request.getParameter("name");
+		String eDesg = request.getParameter("desg");
+		float eSal = Float.parseFloat(request.getParameter("sal"));
+		String eMail = request.getParameter("mail");
+		long ephno = Long.parseLong(request.getParameter("phno"));
+		
+		out.println("=======Details=======");
+		out.println("<br> Employee Id: "+eId);
+		out.println("<br> Employee Name: "+eName);
+		out.println("<br> Employee Desgination: "+eDesg);
+		out.println("<br> Employee Salary: "+eSal);
+		out.println("<br> Employee email: "+eMail);
+		out.println("<br> Employee Phone No: "+ephno);
+	%>
+</body>
+</html>

@@ -1,0 +1,11 @@
+package com.may04.task4;
+
+public class Manager implements Employee {
+
+	@Override
+	public double calculateSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

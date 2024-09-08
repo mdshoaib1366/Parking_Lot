@@ -1,0 +1,18 @@
+package com.may04.task2;
+
+import java.util.Scanner;
+
+public class IsVowel {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String ch = sc.next().charAt(0);
+
+		if(ch >= 'a' && ch <= 'z' || ch>='A' && ch<='Z')
+		{
+			ch.lo
+			if()
+		}
+	}
+
+}

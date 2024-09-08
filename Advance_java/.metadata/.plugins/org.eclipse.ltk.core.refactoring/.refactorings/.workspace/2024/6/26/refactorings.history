@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Inset_Audio_Image_video&apos; to &apos;Insert_Audio_Image_video&apos;" description="Rename resource &apos;Inset_Audio_Image_video&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Inset_Audio_Image_video" name="Insert_Audio_Image_video" stamp="1719507712680" updateReferences="true"/>
+</session>

@@ -1,0 +1,26 @@
+package com.may04.task3;
+
+public class ScienceCollege implements College {
+
+	@Override
+	public void getCollegeName() {
+		System.out.println("College Name: "+getClass().getSimpleName());
+
+	}
+
+	@Override
+	public void addStudent(Student student) {
+		if(student.id > 10)
+		{
+			
+		}
+
+	}
+
+	@Override
+	public void showcaseCollegeDetails() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

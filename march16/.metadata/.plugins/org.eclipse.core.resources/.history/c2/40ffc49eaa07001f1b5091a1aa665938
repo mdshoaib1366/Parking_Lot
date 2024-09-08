@@ -1,0 +1,11 @@
+package com.may01;
+
+public class CakeMain {
+
+	public static void main(String[] args) {
+		Cake cake = new OrderedCake();
+		cake.showCake();
+
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.Servlet;
+
+import java.io.*;
+import java.util.ArrayList;
+
+import com.Bean.ProductBean;
+import com.DAO.ViewProductDAO;
+
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.*;
+import jakarta.servlet.http.*;
+@SuppressWarnings("serial")
+@WebServlet("/view")
+public class ViewProductServlet  extends HttpServlet
+{
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException,IOException
+	{
+		HttpSession hs = req.getSession(false);
+		if(hs == null)
+		{
+			req.setAttribute("msg", "Session has expired... <br>");
+			req.getRequestDispatcher("Msg.jsp").forward(req, res);
+		}
+		else
+		{
+			ArrayList<ProductBean> al = new ViewProductDAO().retrieve();
+			hs.setAttribute("alist", al);
+			
+			String name=(String)hs.getAttribute("name");
+			
+			System.out.println(name);
+			if(name.equals("customer"))
+			req.getRequestDispatcher("CustomerView.jsp").forward(req, res);
+			else
+				req.getRequestDispatcher("adminView.jsp").forward(req, res);
+
+		}
+	
+	}
+}

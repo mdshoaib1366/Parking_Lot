@@ -1,0 +1,14 @@
+package com.DAO;
+
+import java.util.ArrayList;
+
+import com.Bean.ProductBean;
+
+public class ViewProductDAO
+{
+	public ArrayList<ProductBean> al = null;
+	public ArrayList<ProductBean> view(ProductBean pb)
+	{
+		return al;
+	}
+}

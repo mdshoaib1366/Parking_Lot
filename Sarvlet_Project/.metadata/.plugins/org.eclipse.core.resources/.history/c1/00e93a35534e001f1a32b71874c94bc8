@@ -1,0 +1,30 @@
+package com.Servlet;
+
+import java.io.*;
+import java.util.ArrayList;
+
+import com.Bean.ProductBean;
+
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.*;
+import jakarta.servlet.http.*;
+
+@WebServlet("/delete")
+public class DeleteProductServlet extends HttpServlet
+{
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException , IOException
+	{
+		String pCode = req.getParameter("code");
+		HttpSession hs = req.getSession(false);
+		
+		if(hs == null)
+		{
+			req.setAttribute("msg", "Session has expired...<br>");
+			req.getRequestDispatcher("Msg.jsp").forward(req, res);
+		}
+		else
+		{
+			ArrayList<ProductBean> al = hs.getAttribute("alist");
+		}
+	}
+}

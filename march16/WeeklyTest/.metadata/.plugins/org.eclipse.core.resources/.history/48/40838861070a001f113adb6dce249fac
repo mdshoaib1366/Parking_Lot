@@ -1,0 +1,23 @@
+package com.may04;
+
+public class Car implements Vehicle{
+
+	@Override
+	public boolean rent() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean returnVehicle() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public double calculateRentalCost() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

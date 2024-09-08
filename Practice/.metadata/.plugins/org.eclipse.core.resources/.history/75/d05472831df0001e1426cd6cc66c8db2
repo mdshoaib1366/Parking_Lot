@@ -1,0 +1,46 @@
+package com.lab_task.april01;
+
+public class Loan {
+	private double principal;
+	private double interstRate;
+	private int durationMonths;
+
+	public Loan(double principal, double interstRate, int durationMonths) {
+		super();
+
+		this.principal = principal;
+		this.interstRate = interstRate;
+		this.durationMonths = durationMonths;
+	}
+
+	{
+		if (principal == 0 || interstRate == 0 || durationMonths == 0) {
+			System.out.println("Error");
+		}
+	}
+
+	public double calculateMonthlyPayment() {
+
+		return principal+(principal*interstRate/100);
+	}
+
+	public double getPrincipal() {
+		return principal;
+	}
+
+	public double getInterstRate() {
+		return interstRate;
+	}
+
+	public int getDurationMonths() {
+		
+		return (int)this.calculateMonthlyPayment()/durationMonths;
+	}
+
+	@Override
+	public String toString() {
+		return "Loan [principal=" + principal + ", interstRate=" + interstRate + ", durationMonths=" + durationMonths
+				+ "]";
+	}
+
+}

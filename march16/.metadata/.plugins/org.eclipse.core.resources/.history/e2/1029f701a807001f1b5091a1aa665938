@@ -1,0 +1,17 @@
+package com.may01;
+
+public abstract class Cake {
+	private String shape;
+	private String flavour;
+	private int qty;
+	private float price;
+
+	public Cake(String shape, String flavour, int qty) {
+		super();
+		this.shape = shape;
+		this.flavour = flavour;
+		this.qty = qty;
+		
+	}
+
+}

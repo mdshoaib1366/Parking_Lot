@@ -1,0 +1,19 @@
+package com.Servlet;
+
+import java.io.*;
+
+import com.Bean.ProductBean;
+import com.DAO.AddProductDAO;
+
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.*;
+import jakarta.servlet.http.*;
+@SuppressWarnings("serial")
+@WebServlet("/customers")
+public class CustomerLoginServlet  extends HttpServlet
+{
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException,IOException
+	{
+		
+	}
+}

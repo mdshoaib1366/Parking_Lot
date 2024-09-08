@@ -1,0 +1,8 @@
+package com.DAO;
+
+import com.Bean.CustomerBean;
+
+public class CustomerDAO 
+{
+	public CustomerBean cb = null;
+}
